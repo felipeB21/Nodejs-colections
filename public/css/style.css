@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  padding: 10px 0;
+  border-bottom: solid 1px #343333;
+}
+
+.w-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav li {
+  list-style: none;
+}
+nav ul a {
+  color: rgb(180, 180, 180);
+  transition: 0.2s;
+}
+nav ul a:hover {
+  color: white;
+}
+.signin {
+  background-color: #424242;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+.signin:hover {
+  background-color: #535353;
+}
+
+.w-signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.signin-text {
+  font-size: 18px;
+  width: 300px;
+  border-bottom: solid 1px #3d3d3d;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.form-w {
+  margin-top: 24px;
+}
+.form-w form {
+  display: flex;
+  flex-direction: column;
+}
+.form-w form input,
+.form-upload input {
+  margin: 7px 0;
+  padding: 8px 14px;
+  width: 300px;
+  background-color: #393939;
+  border: solid 1px #525252;
+  color: white;
+  outline: 0;
+  border-radius: 8px;
+}
+form label {
+  font-size: 18px;
+}
+.gray {
+  color: rgb(176, 176, 176);
+}
+.blue {
+  color: #77adff;
+}
+.form-w form button,
+.button {
+  margin: 8px 0;
+  width: 300px;
+  padding: 8px 10px;
+  background-color: #151515;
+  color: white;
+  border: solid 1px #393939;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.go-to-signup {
+  border-top: solid 1px #3d3d3d;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+}
+
+.w-body {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.index-title {
+  font-size: 20px;
+  font-weight: 800;
+  background-image: linear-gradient(45deg, #d43fac, #057cd1);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-upload {
+  background-color: #4a4a4a;
+  padding: 20px;
+  border-radius: 9px;
+}
+.form-upload {
+  display: flex;
+  gap: 20px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+}
+textarea {
+  resize: none;
+  background: #373737;
+  color: white;
+  padding: 10px;
+  border: solid 1px #5f5f5f;
+  outline: 0;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+.button-w {
+  width: 100%;
+}

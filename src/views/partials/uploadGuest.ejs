@@ -1,0 +1,36 @@
+<div class="w-body">
+  <% if (!userName) { %>
+  <div class="w-signin">
+    <div>Sign in to Upload your collections!</div>
+    <a href="/signin"><button class="button">Go to Sign in</button></a>
+  </div>
+  <% } else{%>
+  <section class="w-signin">
+    <div class="bg-upload">
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="form-upload">
+          <div class="flex-col">
+            <label for="file">Upload your collection</label>
+            <input
+              class="custom-file-input"
+              type="file"
+              name="file"
+              accept="image/*"
+            />
+          </div>
+          <div class="flex-col">
+            <label for="title">Title</label>
+            <textarea
+              name="title"
+              cols="30"
+              rows="10"
+              placeholder="Ex: My collection when i went to Paris!"
+            ></textarea>
+          </div>
+        </div>
+        <button class="button button-w">Post</button>
+      </form>
+    </div>
+  </section>
+  <% } %>
+</div>

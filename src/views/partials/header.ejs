@@ -1,0 +1,22 @@
+<header>
+  <div class="w-header">
+    <div>
+      <a href="/">MakeCollections</a>
+    </div>
+    <nav>
+      <ul>
+        <% if (userName) { %>
+        <li><a href="/discover">Discover</a></li>
+        <li><a href="/upload">Upload</a></li>
+        <li>
+          <a href="/profile/<%= userId %>">Welcome, <%= userName %></a>
+        </li>
+        <% } else{ %>
+        <li><a href="/discover">Discover</a></li>
+        <li><a href="/upload">Upload</a></li>
+        <li><a class="signin" href="/signin">Sign in</a></li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</header>

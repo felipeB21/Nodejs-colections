@@ -1,0 +1,45 @@
+<div class="w-signin">
+  <div>
+    <div>
+      <h2 class="signin-text">
+        Unlock a World of Collections: Sign up to Share and Explore!
+      </h2>
+    </div>
+    <div class="form-w">
+      <form action="/signup" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Ex: Joe" value="<%= oldData
+        ? oldData.name : "" %>" /> <% if (errors && errors.name) { %>
+        <p class="error-msg"><%= errors.name.msg %></p>
+        <% } %>
+        <label for="lastName">Last name</label>
+        <input type="text" name="lastName" placeholder="Ex: Harrington"
+        value="<%= oldData ? oldData.lastName : "" %>"/> <% if (errors &&
+        errors.lastName) { %>
+        <p class="error-msg"><%= errors.lastName.msg %></p>
+        <% } %>
+        <label for="email">Email</label>
+        <input type="email" name="email" value="<%= oldData ? oldData.email : ""
+        %>" placeholder="Ex: joeharrington@gmail.com"/> <% if (errors &&
+        errors.email) { %>
+        <p class="error-msg"><%= errors.email.msg %></p>
+        <% } %>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Your password" />
+        <% if (errors && errors.password) { %>
+        <p class="error-msg"><%= errors.password.msg %></p>
+        <% } %>
+        <label for="confirmPassword">Confirm password</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm your password"
+        />
+        <% if (errors && errors.confirmPassword) { %>
+        <p class="error-msg"><%= errors.confirmPassword.msg %></p>
+        <% } %>
+        <button>Sign up</button>
+      </form>
+    </div>
+  </div>
+</div>

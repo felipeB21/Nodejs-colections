@@ -1,0 +1,28 @@
+<div class="w-signin">
+  <div>
+    <div>
+      <h2 class="signin-text">
+        Unlock a World of Collections: Sign in to Share and Explore!
+      </h2>
+    </div>
+    <div class="form-w">
+      <form action="" method="POST">
+        <label for="emailLogin">Email</label>
+        <input type="email" name="emailLogin" value="<%= oldData ? oldData.email
+        : "" %>" /> <% if (errors && errors.emailLogin) { %>
+        <p class="error-msg"><%= errors.emailLogin.msg %></p>
+        <% } %>
+        <label for="passwordLogin">Password</label>
+        <input type="password" name="passwordLogin" />
+        <% if (errors && errors.passwordLogin) { %>
+        <p class="error-msg"><%= errors.passwordLogin.msg %></p>
+        <% } %>
+        <button>Sign in</button>
+      </form>
+    </div>
+    <div class="go-to-signup">
+      <p class="gray">New here? Don't have an account yet?</p>
+      <a class="blue" href="/signup">Sign up now!</a>
+    </div>
+  </div>
+</div>
